@@ -39,7 +39,7 @@ Some of the popular ones are:
 
 ## Contributing
 
-Contributing Guide
+[Contributing Guide](CONTRIBUTING.md)
 
 Feel free to open an issue if you find a bug or want to suggest a feature.
 
