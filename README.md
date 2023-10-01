@@ -65,4 +65,4 @@ Yet to be written. Want to help? Create an issue or open a pull request.
 
 ## License
 
-MIT License
+[MIT License](LICENSE.md)
