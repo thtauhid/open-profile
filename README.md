@@ -26,7 +26,7 @@ npm run build
 
 ## Development
 
-Yet to be written. Want to help? Create an issue or open a pull request.
+Currently, we are following this [wireframe](Wireframe.pdf) for the UI.
 
 ## Deployment
 
