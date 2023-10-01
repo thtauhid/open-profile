@@ -1,27 +1,68 @@
-# React + TypeScript + Vite
+# Open Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Unified profile for all thing open source.
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Yet to be written. Want to help? Create an issue or open a pull request.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+git clone https://github.com/thtauhid/open-profile
+cd open-profile
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run the development server:
+
+```bash
+npm run dev
+```
+
+```bash
+npm run build
+```
+
+## Development
+
+Yet to be written. Want to help? Create an issue or open a pull request.
+
+## Deployment
+
+You can deploy this project to any static site hosting service.
+
+Some of the popular ones are:
+
+- [Vercel](https://vercel.com/) (Recommended)
+- [Netlify](https://www.netlify.com/)
+
+## Contributing
+
+Contributing Guide
+
+Feel free to open an issue if you find a bug or want to suggest a feature.
+
+### hacktoberfest
+
+1. Please read the [rules](https://hacktoberfest.com/participation/) before opening a pull request.
+2. The maintainer(s) will add the `hacktoberfest-accepted` label after reviewing and accepting your pull request.
+3. Refer to the dedicated [hacktoberfest project view](https://github.com/users/thtauhid/projects/2/views/2) to see what issues are available to work on.
+4. You can also create your own issue if you have something in mind.
+5. Don't forget to star the repo if you like it. ⭐
+
+## Contributors
+
+<a href="https://github.com/thtauhid/open-profile/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=thtauhid/open-profile" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
+## Tech Stack
+
+Yet to be written. Want to help? Create an issue or open a pull request.
+
+## License
+
+MIT License
