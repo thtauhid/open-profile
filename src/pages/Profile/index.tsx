@@ -1,6 +1,7 @@
 // import { useParams } from "react-router-dom";
 import Bio from "./Bio";
 import Header from "./Header";
+import TopRepos from "./TopRepos";
 
 
 function Profile() {
@@ -10,6 +11,7 @@ function Profile() {
       <div className="w-1/2">
         <Header />
         <Bio />
+        <TopRepos />
       </div>
     </div>
   );
