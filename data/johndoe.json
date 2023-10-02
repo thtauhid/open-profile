@@ -19,5 +19,38 @@
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/john-doe"
     }
+  ],
+
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas",
+      "image": "https://picsum.photos/200/300",
+      "url": "https://www.google.com"
+    },
+    {
+      "title": "Project 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas",
+      "image": "https://picsum.photos/200/300",
+      "url": "https://www.google.com"
+    },
+    {
+      "title": "Project 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas",
+      "image": "https://picsum.photos/200/300",
+      "url": "https://www.google.com"
+    },
+    {
+      "title": "Project 4",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas",
+      "image": "https://picsum.photos/200/300",
+      "url": "https://www.google.com"
+    },
+    {
+      "title": "Project 5",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas",
+      "image": "https://picsum.photos/200/300",
+      "url": "https://www.google.com"
+    }
   ]
 }

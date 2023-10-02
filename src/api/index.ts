@@ -19,3 +19,7 @@ export const isAvailableForHire = () => {
 export const getSociaLinks = () => {
   return info.social_links;
 };
+
+export const getProjects = () => {
+  return info.projects;
+};
