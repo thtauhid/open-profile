@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getFullName, getInitials, isAvailableForHire } from "@/api";
 
 function Header() {
@@ -21,7 +21,9 @@ function Header() {
         </Avatar>
         <div className="m-2">
           <h1 className="font-bold text-2xl">{name}</h1>
-          <span>@{username}</span>
+          <Link to={`https://github.com/${username}`} target="_blank">
+            @{username}
+          </Link>
         </div>
         {isUserAvailableForHire && (
           <div className="m-2">
@@ -32,9 +34,9 @@ function Header() {
         )}
       </div>
       <div className="flex gap-2">
-        <p>
+        <Link to={`https://github.com/${username}`} target="_blank">
           <AiFillGithub size={30} />
-        </p>
+        </Link>
         <p>
           <AiFillFacebook size={30} />
         </p>
