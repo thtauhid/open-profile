@@ -4,7 +4,12 @@ import { AiFillFacebook } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
-import {getFullName, getInitials, getSociaLinks, isAvailableForHire} from "@/api";
+import {
+  getFullName,
+  getInitials,
+  getSociaLinks,
+  isAvailableForHire,
+} from "@/api";
 
 function Header() {
   const { username } = useParams();
@@ -38,15 +43,21 @@ function Header() {
         <Link to={`https://github.com/${username}`} target="_blank">
           <AiFillGithub size={30} />
         </Link>
-        <Link to={sociaLinks[0].url} target="_blank">
-          <AiFillFacebook size={30} />
-        </Link>
-        <Link to={sociaLinks[1].url} target="_blank">
-          <RiTwitterXFill size={30} />
-        </Link>
-        <Link to={sociaLinks[2].url} target="_blank">
-          <AiFillLinkedin size={30} />
-        </Link>
+        {sociaLinks[0]?.url && (
+          <Link to={sociaLinks[0].url} target="_blank">
+            <AiFillFacebook size={30} />
+          </Link>
+        )}
+        {sociaLinks[1]?.url && (
+          <Link to={sociaLinks[1].url} target="_blank">
+            <RiTwitterXFill size={30} />
+          </Link>
+        )}
+        {sociaLinks[2]?.url && (
+          <Link to={sociaLinks[2].url} target="_blank">
+            <AiFillLinkedin size={30} />
+          </Link>
+        )}
       </div>
     </div>
   );
