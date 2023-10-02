@@ -19,7 +19,7 @@ function Homepage() {
   return (
     <div className="h-screen flex items-center justify-center flex-col">
       <h1 className="font-bold text-4xl text-center">Open Profile</h1>
-      <span className="text-gray-500 mt-2">Unified opensource profile</span>
+      <span className="text-gray-500 mt-2">Unified profile</span>
       <div className="flex items-center m-10 justify-center">
         <div>
           <form onSubmit={handleSubmit} className="space-x-2 flex mb-5">
