@@ -15,3 +15,7 @@ export const getIntro = () => {
 export const isAvailableForHire = () => {
   return true;
 };
+
+export const getSociaLinks = () => {
+  return info.social_links;
+};
