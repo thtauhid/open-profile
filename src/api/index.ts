@@ -13,7 +13,7 @@ export const getIntro = () => {
 };
 
 export const isAvailableForHire = () => {
-  return true;
+  return info.available_for_hire;
 };
 
 export const getSociaLinks = () => {
