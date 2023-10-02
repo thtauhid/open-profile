@@ -1,7 +1,7 @@
 // import { useParams } from "react-router-dom";
 import Bio from "./Bio";
 import Header from "./Header";
-import TopRepos from "./TopRepos";
+import TopRepos from "./TopRepos&Activities";
 
 
 function Profile() {
