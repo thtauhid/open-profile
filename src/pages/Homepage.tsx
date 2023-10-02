@@ -14,7 +14,7 @@ function Homepage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    navigate(`/${username}`);
+    navigate(`profile/${username}`);
   };
   return (
     <div className="h-screen flex items-center justify-center flex-col">
