@@ -56,6 +56,7 @@ Feel free to open an issue if you find a bug or want to suggest a feature.
 4. The maintainer(s) will add the `hacktoberfest-accepted` label after reviewing and accepting your pull request.
 5. Refer to the dedicated [hacktoberfest project view](https://github.com/users/thtauhid/projects/2/views/2) to see what issues are available to work on.
 6. You can also create your own issue if you have something in mind.
+7. Low quality PRs will not be merged
 
 ## Tech Stack
 
