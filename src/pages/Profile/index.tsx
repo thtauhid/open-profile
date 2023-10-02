@@ -3,9 +3,7 @@ import Bio from "./Bio";
 import Header from "./Header";
 import Testimonial from "./Testimonial";
 
-
 function Profile() {
-  // const { username } = useParams();
   return (
     <div className="flex justify-center my-10 px-10">
       <div className="md:w-[80%] w-full">
