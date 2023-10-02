@@ -57,6 +57,21 @@ Feel free to open an issue if you find a bug or want to suggest a feature.
 5. Refer to the dedicated [hacktoberfest project view](https://github.com/users/thtauhid/projects/2/views/2) to see what issues are available to work on.
 6. You can also create your own issue if you have something in mind.
 
+## Tech Stack
+
+- Front-End:
+React(with TypeScript),
+Vite (Build Tool),
+Tailwind CSS,
+shadcn ui
+- Linting and Code Quality:
+ESLint,
+@typescript-eslint (TypeScript-specific linting)
+- Routing:
+React Router (Client-side routing)
+- Build and Package Management:
+npm (Node Package Manager)
+
 ## Contributors
 
 <a href="https://github.com/thtauhid/open-profile/graphs/contributors">
@@ -65,9 +80,8 @@ Feel free to open an issue if you find a bug or want to suggest a feature.
 
 Made with [contrib.rocks](https://contrib.rocks).
 
-## Tech Stack
 
-Yet to be written. Want to help? Create an issue or open a pull request.
+
 
 ## License
 
