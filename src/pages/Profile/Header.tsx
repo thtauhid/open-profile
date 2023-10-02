@@ -1,4 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { AiFillGithub } from 'react-icons/ai';
+import { AiFillFacebook } from 'react-icons/ai';
+import { RiTwitterXFill } from 'react-icons/ri';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 function Header() {
   return (
@@ -19,10 +23,10 @@ function Header() {
         </div>
       </div>
       <div className="flex gap-2">
-        <p>GH</p>
-        <p>FB</p>
-        <p>X</p>
-        <p>IN</p>
+        <p><AiFillGithub size={30}/></p>
+        <p><AiFillFacebook size={30}/></p>
+        <p><RiTwitterXFill size={30}/></p>
+        <p><AiFillLinkedin size={30}/></p>
       </div>
     </div>
   );
