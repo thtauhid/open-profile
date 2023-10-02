@@ -2,9 +2,14 @@
 
 Unified profile to showcase your work.
 
-## Usage
+## How it works
 
-Yet to be written. Want to help? Create an issue or open a pull request.
+The app will fetch your data from different sources and display them in a single page.
+
+Currently we fetch data from:
+
+- GitHub
+- Data from a JSON file created by the user
 
 ## Installation
 
