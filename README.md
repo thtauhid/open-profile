@@ -45,11 +45,12 @@ Feel free to open an issue if you find a bug or want to suggest a feature.
 
 ### hacktoberfest
 
-1. Please read the [rules](https://hacktoberfest.com/participation/) before opening a pull request.
-2. The maintainer(s) will add the `hacktoberfest-accepted` label after reviewing and accepting your pull request.
-3. Refer to the dedicated [hacktoberfest project view](https://github.com/users/thtauhid/projects/2/views/2) to see what issues are available to work on.
-4. You can also create your own issue if you have something in mind.
-5. Don't forget to star the repo if you like it. ⭐
+1. Star the repo if you like it. ⭐
+2. Please read the [rules](https://hacktoberfest.com/participation/) before opening a pull request.
+3. Join our [Discord server](https://discord.gg/3jvahVGKfa) to discuss ideas, ask questions, collaborate and connect with like-minded people.
+4. The maintainer(s) will add the `hacktoberfest-accepted` label after reviewing and accepting your pull request.
+5. Refer to the dedicated [hacktoberfest project view](https://github.com/users/thtauhid/projects/2/views/2) to see what issues are available to work on.
+6. You can also create your own issue if you have something in mind.
 
 ## Contributors
 
