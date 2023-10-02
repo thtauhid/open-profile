@@ -1,16 +1,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { AiFillGithub } from 'react-icons/ai';
-import { AiFillFacebook } from 'react-icons/ai';
-import { RiTwitterXFill } from 'react-icons/ri';
-import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
+import { RiTwitterXFill } from "react-icons/ri";
+import { AiFillLinkedin } from "react-icons/ai";
+import { useParams } from "react-router-dom";
 
 function Header() {
+  const { username } = useParams();
+
   return (
     <div className="border-2 flex justify-between items-center p-2">
       <div className="flex items-center">
         <Avatar className="w-20 h-20">
-          <AvatarImage src="https://github.com/thtauhid.png" />
-          <AvatarFallback>OP</AvatarFallback>
+          <AvatarImage src={`https://github.com/${username}.png`} />
+          <AvatarFallback>JD</AvatarFallback>
         </Avatar>
         <div className="m-2">
           <h1 className="font-bold text-2xl">John Doe</h1>
@@ -23,10 +26,18 @@ function Header() {
         </div>
       </div>
       <div className="flex gap-2">
-        <p><AiFillGithub size={30}/></p>
-        <p><AiFillFacebook size={30}/></p>
-        <p><RiTwitterXFill size={30}/></p>
-        <p><AiFillLinkedin size={30}/></p>
+        <p>
+          <AiFillGithub size={30} />
+        </p>
+        <p>
+          <AiFillFacebook size={30} />
+        </p>
+        <p>
+          <RiTwitterXFill size={30} />
+        </p>
+        <p>
+          <AiFillLinkedin size={30} />
+        </p>
       </div>
     </div>
   );
