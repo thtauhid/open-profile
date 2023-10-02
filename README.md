@@ -1,6 +1,6 @@
 # Open Profile
 
-Unified profile for all thing open source.
+Unified profile to showcase your work.
 
 ## Usage
 
