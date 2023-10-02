@@ -52,5 +52,32 @@
       "image": "https://picsum.photos/200/300",
       "url": "https://www.google.com"
     }
+  ],
+
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "company": "Google",
+      "location": "Mountain View, CA",
+      "start_date": "2018-01-01",
+      "end_date": "2019-01-01",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Facebook",
+      "location": "Menlo Park, CA",
+      "start_date": "2019-01-01",
+      "end_date": "2020-01-01",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas"
+    },
+    {
+      "title": "Fullstack Developer",
+      "company": "Amazon",
+      "location": "Seattle, WA",
+      "start_date": "2020-01-01",
+      "end_date": "2021-01-01",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! Sequi praesentium ut distinctio iure dolore impedit assumenda in molestiae, aperiam veniam, consequuntur qui deserunt repudiandae harum. Inventore nam voluptatem expedita voluptas"
+    }
   ]
 }

@@ -23,3 +23,7 @@ export const getSociaLinks = () => {
 export const getProjects = () => {
   return info.projects;
 };
+
+export const getExperience = () => {
+  return info.experience;
+};
