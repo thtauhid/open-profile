@@ -4,26 +4,32 @@ import { AiFillFacebook } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
 import { useParams } from "react-router-dom";
+import { getFullName, getInitials, isAvailableForHire } from "@/api";
 
 function Header() {
   const { username } = useParams();
+  const name = getFullName();
+  const initials = getInitials();
+  const isUserAvailableForHire = isAvailableForHire();
 
   return (
     <div className="border-2 flex justify-between items-center p-2">
       <div className="flex items-center">
         <Avatar className="w-20 h-20">
           <AvatarImage src={`https://github.com/${username}.png`} />
-          <AvatarFallback>JD</AvatarFallback>
+          <AvatarFallback>{initials}</AvatarFallback>
         </Avatar>
         <div className="m-2">
-          <h1 className="font-bold text-2xl">John Doe</h1>
-          <span>@john.doe</span>
+          <h1 className="font-bold text-2xl">{name}</h1>
+          <span>@{username}</span>
         </div>
-        <div className="m-2">
-          <p className="bg-green-500 text-white text-sm p-2 rounded-full">
-            Available for hire
-          </p>
-        </div>
+        {isUserAvailableForHire && (
+          <div className="m-2">
+            <p className="bg-green-500 text-white text-sm p-2 rounded-full">
+              Available for hire
+            </p>
+          </div>
+        )}
       </div>
       <div className="flex gap-2">
         <p>
