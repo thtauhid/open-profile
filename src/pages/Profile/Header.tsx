@@ -18,6 +18,10 @@ function Header() {
   const isUserAvailableForHire = isAvailableForHire();
   const sociaLinks = getSociaLinks();
 
+  const facebookLink = sociaLinks.find(({ name }) => name === "facebook");
+  const twitterLink = sociaLinks.find(({ name }) => name === "twitter");
+  const linkedinLink = sociaLinks.find(({ name }) => name === "linkedin");
+
   return (
     <div className="border-2 flex justify-between items-center p-2">
       <div className="flex items-center">
@@ -43,18 +47,18 @@ function Header() {
         <Link to={`https://github.com/${username}`} target="_blank">
           <AiFillGithub size={30} />
         </Link>
-        {sociaLinks[0]?.url && (
-          <Link to={sociaLinks[0].url} target="_blank">
+        {facebookLink && (
+          <Link to={facebookLink.url} target="_blank">
             <AiFillFacebook size={30} />
           </Link>
         )}
-        {sociaLinks[1]?.url && (
-          <Link to={sociaLinks[1].url} target="_blank">
+        {twitterLink && (
+          <Link to={twitterLink.url} target="_blank">
             <RiTwitterXFill size={30} />
           </Link>
         )}
-        {sociaLinks[2]?.url && (
-          <Link to={sociaLinks[2].url} target="_blank">
+        {linkedinLink && (
+          <Link to={linkedinLink.url} target="_blank">
             <AiFillLinkedin size={30} />
           </Link>
         )}
