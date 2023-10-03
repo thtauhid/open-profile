@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 const Working = () => {
   return (
     <div className="border-2 flex justify-between items-center flex-col p-3">
-      <div className="flex w-full justify-start my-2 text-[2rem] font-bold pl-7">
+      <div className="px-2">
+         <div className="flex w-full justify-start my-2 text-[2rem] font-bold px-6">
         Working On
       </div>
-      <section className="flex flex-wrap justify-around w-full px-2">
+      <section className="flex flex-wrap justify-around w-full ">
         <WorkingCard
           title={"Web Development"}
           content={
@@ -34,9 +35,11 @@ const Working = () => {
         />
       </section>
 
-      <div className="my-4 flex w-full justify-end pr-5">
+      <div className="my-4 flex  w-full justify-end px-6">
         <Button variant={"default"}>More</Button>
       </div>
+      </div>
+     
     </div>
   );
 };
