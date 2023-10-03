@@ -2,7 +2,5 @@ import { defineConfig, minimalPreset as preset } from '@vite-pwa/assets-generato
 
 export default defineConfig({
   preset,
-  images: [
-    'src/assets/icons/favicon-source.png'
-  ]
+  images: ['src/assets/icons/favicon-source.png']
 })
