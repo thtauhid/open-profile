@@ -11,7 +11,7 @@ function Profile() {
 
   useEffect(() => {
     document.title = pageDetails.profilePage.title;
-  }, []);
+  });
 
   return (
     <div className="flex justify-center my-10">

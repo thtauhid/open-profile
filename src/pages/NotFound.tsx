@@ -8,7 +8,7 @@ const NotFound = () => {
 
   useEffect(() => {
     document.title = pageDetails.notFoundPage.title;
-  }, []);
+  });
 
   return (
     <div className="h-screen flex items-center justify-center flex-col">

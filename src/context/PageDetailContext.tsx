@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-type PageDetail = {
+export type PageDetail = {
   title: string;
 };
 
@@ -18,7 +18,7 @@ const defaultPageDetails: Pages = {
 
 const PageDetailContext = createContext({
   pageDetails: defaultPageDetails,
-  setPageDetails: (value: any) => value,
+  setPageDetails: (value: Pages) => value,
 });
 
 export default PageDetailContext;

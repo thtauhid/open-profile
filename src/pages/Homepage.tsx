@@ -4,7 +4,7 @@ import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // context
-import PageDetailContext from "@/context/PageDetailContext";
+import PageDetailContext, { PageDetail } from "@/context/PageDetailContext";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function Homepage() {
   useEffect(() => {
     setPageDetails({
       ...pageDetails,
-      profilePage: { title: `${username} | Open Profile` },
+      profilePage: { title: `${username} | Open Profile` } as PageDetail,
     });
 
     document.title = pageDetails.homePage.title;
