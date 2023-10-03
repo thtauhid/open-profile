@@ -38,7 +38,7 @@ const Testimonial = () => {
         />
       </section>
       <div className="my-4 flex w-full justify-end pr-5">
-        <Button variant={"blackwhite"}>More</Button>
+        <Button variant={"default"}>More</Button>
       </div>
     </div>
   );

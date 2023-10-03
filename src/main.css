@@ -80,25 +80,3 @@ body {
 }
 
 
-
-.content-text {
-  animation: fadedcontent 2s;
-}
-
-@keyframes fadedcontent {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
-
-  }
-
-  100% {
-    opacity: 1;
-
-  }
-}
-.boxshadow{
-  box-shadow: 10px 10px 5px -5px rgba(35, 34, 34, 0.6);
-    -webkit-box-shadow: 10px 10px 5px -5px rgba(35, 34, 34, 0.6);
-    -moz-box-shadow: 10px 10px 5px -5px rgba(35, 34, 34, 0.6);
-}
