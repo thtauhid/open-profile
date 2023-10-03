@@ -13,6 +13,7 @@ function Profile() {
         <Bio />
         <Working/>
         <Experiance/>
+        <Testimonial/>
       </div>
     </div>
   );
