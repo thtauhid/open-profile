@@ -7,10 +7,10 @@ export default function Experiance() {
     console.log(data);
 
     return (
-        <div className="flex p-[30px] justify-center items-center">
-            <div className="p-[10px] w-[100%] border-2 border-black">
-                <h1 className="text-2xl font-bold">Experiance</h1>
-                <div className="flex p-[30px] flex-wrap justify-center items-center gap-10">
+        <div className="flex  justify-center items-center">
+            <div className="p-[10px] w-[100%] border-2 border-gray border-t-0">
+                <h1 className="text-3xl p-[10px] pl-[25px] font-bold">Experiance</h1>
+                <div className="flex py-[20px] flex-wrap justify-center items-center gap-10">
                     {data.map((data) => {
                         return (
                             <div className="border-2 border-black w-[45%] p-2 rounded-md">

@@ -3,6 +3,7 @@ import Bio from "./Bio";
 import Header from "./Header";
 import Working from "./Working";
 import Testimonial from "./Testimonial";
+import Experiance from "@/api/Experiance";
 
 function Profile() {
   return (
@@ -11,7 +12,7 @@ function Profile() {
         <Header />
         <Bio />
         <Working/>
-        <Testimonial/>
+        <Experiance/>
       </div>
     </div>
   );
