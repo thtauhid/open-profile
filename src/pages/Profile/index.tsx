@@ -1,6 +1,7 @@
 // import { useParams } from "react-router-dom";
 import Bio from "./Bio";
 import Header from "./Header";
+import Working from "./Working";
 import Testimonial from "./Testimonial";
 
 function Profile() {
@@ -9,6 +10,7 @@ function Profile() {
       <div className="md:w-[80%] w-full">
         <Header />
         <Bio />
+        <Working/>
         <Testimonial/>
       </div>
     </div>
