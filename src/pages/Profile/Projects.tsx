@@ -6,10 +6,9 @@ export const Projects= ()=>{
     console.log(data);
 
     return (
-        <div className="flex  justify-center items-center mt-4">
-            <div className="p-[10px] w-[100%] border-2 border-gray">
+        <div className="p-[10px] border-2 border-gray">
                 <h1 className="text-3xl p-[10px] pl-[25px] font-bold">Projects</h1>
-                <div className="flex py-[20px] flex-wrap justify-center items-center gap-10">
+                <div className="flex p-[10px] pl-[25px] flex-wrap gap-10">
                     {data.map((data) => {
                         return (
                             <div className="border-2 border-black w-[45%] p-2 rounded-md">
@@ -25,7 +24,6 @@ export const Projects= ()=>{
                 <div className="flex justify-end px-10 py-1">
                     <Button type="submit">More</Button>
                 </div>
-            </div>
         </div>
     )  
 }
