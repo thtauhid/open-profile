@@ -3,6 +3,7 @@
   "short_name": "Open Profile",
   "description": "Unified profile to showcase your work.",
   "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "src/assets/icons/PWA/manifest-icon-192.maskable.png",
