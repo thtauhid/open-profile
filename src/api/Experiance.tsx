@@ -9,7 +9,7 @@ export default function Experiance() {
     return (
         <div className="flex  justify-center items-center">
             <div className="p-[10px] w-[100%] border-2 border-gray border-t-0">
-                <h1 className="text-3xl p-[10px] pl-[25px] font-bold">Experiance</h1>
+                <h1 className="text-3xl p-[10px] pl-[25px] font-bold">Experience</h1>
                 <div className="flex py-[20px] flex-wrap justify-center items-center gap-10">
                     {data.map((data) => {
                         return (
