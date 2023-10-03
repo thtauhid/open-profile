@@ -1,12 +1,25 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+// context
+import PageDetailContext from "@/context/PageDetailContext";
 
 function Homepage() {
   const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
+  const { pageDetails, setPageDetails } = useContext(PageDetailContext);
+
+  useEffect(() => {
+    setPageDetails({
+      ...pageDetails,
+      profilePage: { title: `${username} | Open Profile` },
+    });
+
+    document.title = pageDetails.homePage.title;
+  }, [username]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
