@@ -13,7 +13,7 @@ const TestimonialCard = ({
   content: string;
 }) => {
   return (
-    <article className="bg-slate-200 md:w-[46%] w-full h-48 flex items-center px-2 rounded-md ] mx-2 my-3">
+    <article className="bg-slate-200 lg:w-[46%] w-full p-2 flex items-center px-2 rounded-md ] mx-2 my-3">
       <div className="w-max h-full flex items-center ">
         <Avatar className=" h-32 w-32">
           <AvatarImage src={imgUrl} />
