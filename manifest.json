@@ -6,28 +6,16 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "src/assets/icons/PWA/manifest-icon-192.maskable.png",
+      "src": "public/icons/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "src/assets/icons/PWA/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "src/assets/icons/PWA/manifest-icon-512.maskable.png",
+      "src": "public/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "src/assets/icons/PWA/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ]
 }
