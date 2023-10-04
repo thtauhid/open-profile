@@ -3,6 +3,7 @@ import Bio from "./Bio";
 import Header from "./Header";
 import Working from "./Working";
 import Testimonial from "./Testimonial";
+import Experiance from "@/pages/Profile/Experiance";
 
 function Profile() {
   return (
@@ -11,6 +12,7 @@ function Profile() {
         <Header />
         <Bio />
         <Working/>
+        <Experiance/>
         <Testimonial/>
       </div>
     </div>
