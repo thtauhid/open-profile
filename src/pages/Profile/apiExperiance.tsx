@@ -13,7 +13,7 @@ export default function Experiance() {
                 <div className="flex py-[20px] flex-wrap justify-start items-center gap-5">
                     {data.map((data) => {
                         return (
-                            <div className="border-2 ml-[20px] border-black w-[45%] p-2 rounded-md">
+                            <div className="border-2 ml-[20px] border-black lg:w-[45%] p-2 rounded-md">
                                 <div className="p-1">
                                     <h1 className="text-2xl font-bold">{data.title}</h1>
                                     <p className="text-gray-500">{data.company}</p>
