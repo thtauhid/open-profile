@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-// import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Bio from "./Bio";
 import Header from "./Header";
 import Working from "./Working";
@@ -11,10 +11,18 @@ import Experience from "@/pages/Profile/Experience";
 import PageDetailContext from "@/context/PageDetailContext";
 
 function Profile() {
+  const location = useLocation();
+  const currentURL: string = location.pathname;
+  const currentUsername: string = currentURL.split("/")[2];
+
   const { pageDetails } = useContext(PageDetailContext);
 
   useEffect(() => {
-    document.title = pageDetails?.profilePage.title || "Open Profile";
+    if (currentUsername) {
+      document.title = `${currentUsername} | Open Profile`;
+    } else {
+      document.title = pageDetails?.profilePage.title || "Open Profile";
+    }
   });
 
   return (
