@@ -11,12 +11,10 @@ export type Pages = {
 };
 
 export type PageDetailContextValue = {
-  pageDetails: Pages;
-  setPageDetails: Dispatch<SetStateAction<Pages>>;
+  pageDetails?: Pages;
+  setPageDetails?: Dispatch<SetStateAction<Pages>>;
 };
 
-const PageDetailContext = createContext<PageDetailContextValue | undefined>(
-  undefined
-);
+const PageDetailContext = createContext<PageDetailContextValue>({});
 
 export default PageDetailContext;

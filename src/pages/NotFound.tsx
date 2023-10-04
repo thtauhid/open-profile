@@ -9,7 +9,8 @@ const NotFound = () => {
   const { pageDetails } = useContext(PageDetailContext);
 
   useEffect(() => {
-    document.title = pageDetails.notFoundPage.title;
+    document.title =
+      pageDetails?.notFoundPage.title || "Page Not Found | Open Profile";
   });
 
   return (

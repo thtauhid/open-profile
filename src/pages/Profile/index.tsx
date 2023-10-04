@@ -14,7 +14,7 @@ function Profile() {
   const { pageDetails } = useContext(PageDetailContext);
 
   useEffect(() => {
-    document.title = pageDetails.profilePage.title;
+    document.title = pageDetails?.profilePage.title || "Open Profile";
   });
 
   return (
@@ -22,10 +22,10 @@ function Profile() {
       <div className="md:w-[80%] w-full">
         <Header />
         <Bio />
-        <Working/>
-        <Experience/>
-        <Testimonial/>
-        <Projects/>
+        <Working />
+        <Experience />
+        <Testimonial />
+        <Projects />
       </div>
     </div>
   );

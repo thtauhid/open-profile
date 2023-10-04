@@ -4,10 +4,7 @@ import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // context
-import PageDetailContext, {
-  PageDetail,
-  PageDetailContextValue,
-} from "@/context/PageDetailContext";
+import PageDetailContext, { PageDetail } from "@/context/PageDetailContext";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -16,12 +13,14 @@ function Homepage() {
   const { pageDetails, setPageDetails } = useContext(PageDetailContext);
 
   useEffect(() => {
-    setPageDetails({
-      ...pageDetails,
-      profilePage: { title: `${username} | Open Profile` } as PageDetail,
-    });
+    if (pageDetails && setPageDetails) {
+      setPageDetails({
+        ...pageDetails,
+        profilePage: { title: `${username} | Open Profile` } as PageDetail,
+      });
+    }
 
-    document.title = pageDetails.homePage.title;
+    document.title = pageDetails?.homePage.title || "Open Profile";
   }, [username]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
