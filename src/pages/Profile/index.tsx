@@ -3,7 +3,7 @@ import Bio from "./Bio";
 import Header from "./Header";
 import Working from "./Working";
 import Testimonial from "./Testimonial";
-import Experiance from "@/api/Experiance";
+import Experiance from "@/pages/Profile/Experiance";
 
 function Profile() {
   return (
