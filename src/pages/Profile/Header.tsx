@@ -23,8 +23,8 @@ function Header() {
   const linkedinLink = sociaLinks.find(({ name }) => name === "linkedin");
 
   return (
-    <div className="border-2 flex justify-between items-center p-2">
-      <div className="flex items-center">
+    <div className="border-2 flex flex-col gap-5 justify-between p-4 sm:flex-row">
+      <div className="flex flex-col items-center justify-between sm:flex-row lg:gap-3">
         <Avatar className="w-20 h-20">
           <AvatarImage src={`https://github.com/${username}.png`} />
           <AvatarFallback>{initials}</AvatarFallback>
@@ -43,7 +43,7 @@ function Header() {
           </div>
         )}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 justify-center items-center">
         <Link to={`https://github.com/${username}`} target="_blank">
           <AiFillGithub size={30} />
         </Link>
