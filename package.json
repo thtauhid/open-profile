@@ -21,7 +21,8 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vite-plugin-pwa": "^0.16.5"
   },
   "devDependencies": {
     "@types/node": "^20.8.0",
