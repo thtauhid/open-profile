@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: ['/src/assets/icons/favicon.ico', '/src/assets/icons/apple-touch-icon.png'],
+      includeAssets: ['/public/icons/favicon.ico', '/public/icons/apple-touch-icon.png'],
       registerType: 'autoUpdate',
       manifest: PWAmanifest,
       devOptions: {
