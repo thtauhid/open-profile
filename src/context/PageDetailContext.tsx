@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { Dispatch, SetStateAction, createContext } from "react";
 
 export type PageDetail = {
   title: string;
@@ -10,15 +10,13 @@ type Pages = {
   notFoundPage: PageDetail;
 };
 
-const defaultPageDetails: Pages = {
-  homePage: { title: "" },
-  profilePage: { title: "" },
-  notFoundPage: { title: "" },
+type PageDetailContextValue = {
+  pageDetails: Pages;
+  setPageDetails: Dispatch<SetStateAction<Pages>>;
 };
 
-const PageDetailContext = createContext({
-  pageDetails: defaultPageDetails,
-  setPageDetails: (value: Pages) => value,
-});
+const PageDetailContext = createContext<PageDetailContextValue | undefined>(
+  undefined
+);
 
 export default PageDetailContext;
