@@ -4,13 +4,13 @@ export type PageDetail = {
   title: string;
 };
 
-type Pages = {
+export type Pages = {
   homePage: PageDetail;
   profilePage: PageDetail;
   notFoundPage: PageDetail;
 };
 
-type PageDetailContextValue = {
+export type PageDetailContextValue = {
   pageDetails: Pages;
   setPageDetails: Dispatch<SetStateAction<Pages>>;
 };

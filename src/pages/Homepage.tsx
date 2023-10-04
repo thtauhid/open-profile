@@ -4,7 +4,10 @@ import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // context
-import PageDetailContext, { PageDetail } from "@/context/PageDetailContext";
+import PageDetailContext, {
+  PageDetail,
+  PageDetailContextValue,
+} from "@/context/PageDetailContext";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -22,7 +25,17 @@ function Homepage() {
   }, [username]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(e.target.value);
+    const input = e.target.value;
+
+    const githubUrlRegex = /https:\/\/github\.com\/([a-zA-Z0-9_-]+)/;
+    const match = input.match(githubUrlRegex);
+
+    if (match) {
+      const usernameFromUrl = match[1];
+      setUsername(usernameFromUrl);
+    } else {
+      setUsername(input);
+    }
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
