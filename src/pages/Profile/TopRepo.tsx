@@ -6,7 +6,7 @@ const TopRepo = () => {
   console.log(data);
 
   return (
-    <div className="p-[25px] my-8 border-2 border-gray">
+    <div className=" my-4 ">
       <h1 className="text-3xl p-[10px] pl-[25px] font-bold">Top Repos</h1>
       <div className="lg:flex p-[10px] pl-[25px] flex-col gap-10">
         {data.map((data) => {
@@ -21,7 +21,7 @@ const TopRepo = () => {
           );
         })}
       </div>
-      <div className="flex justify-end px-3 py-1">
+      <div className="flex justify-end px-3 my-4">
         <Button type="submit">More</Button>
       </div>
     </div>
