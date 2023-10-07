@@ -2,6 +2,10 @@
 
 Unified profile to showcase your work.
 
+We dream of a time when recruiters will not ask for a resume. Instead, they will ask for your Open Profile ID. Open Profile will become the standard for sharing your professional profile. It will be the first thing you share with a recruiter, a potential employer, a potential client, a potential partner, a potential investor, a potential co-founder, a potential employee, a potential collaborator, a potential customer, a potential anything.
+
+Read more about the idea [here](ABOUT.md).
+
 ## How it works
 
 The app will fetch your data from different sources and display them in a single page.
@@ -61,17 +65,17 @@ Feel free to open an issue if you find a bug or want to suggest a feature.
 ## Tech Stack
 
 - Front-End:
-React(with TypeScript),
-Vite (Build Tool),
-Tailwind CSS,
-shadcn ui
+  React(with TypeScript),
+  Vite (Build Tool),
+  Tailwind CSS,
+  shadcn ui
 - Linting and Code Quality:
-ESLint,
-@typescript-eslint (TypeScript-specific linting)
+  ESLint,
+  @typescript-eslint (TypeScript-specific linting)
 - Routing:
-React Router (Client-side routing)
+  React Router (Client-side routing)
 - Build and Package Management:
-npm (Node Package Manager)
+  npm (Node Package Manager)
 
 ## Contributors
 
@@ -80,9 +84,6 @@ npm (Node Package Manager)
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
-
-
-
 
 ## License
 

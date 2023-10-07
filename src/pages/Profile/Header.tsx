@@ -4,17 +4,27 @@ import { AiFillFacebook } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
-import { getFullName, getInitials, isAvailableForHire } from "@/api";
+import {
+  getFullName,
+  getInitials,
+  getSociaLinks,
+  isAvailableForHire,
+} from "@/api";
 
 function Header() {
   const { username } = useParams();
   const name = getFullName();
   const initials = getInitials();
   const isUserAvailableForHire = isAvailableForHire();
+  const sociaLinks = getSociaLinks();
+
+  const facebookLink = sociaLinks.find(({ name }) => name === "facebook");
+  const twitterLink = sociaLinks.find(({ name }) => name === "twitter");
+  const linkedinLink = sociaLinks.find(({ name }) => name === "linkedin");
 
   return (
-    <div className="border-2 flex justify-between items-center p-2">
-      <div className="flex items-center">
+    <div className="border-2 flex flex-col gap-5 justify-between p-4 sm:flex-row">
+      <div className="flex flex-col items-center justify-between sm:flex-row lg:gap-3">
         <Avatar className="w-20 h-20">
           <AvatarImage src={`https://github.com/${username}.png`} />
           <AvatarFallback>{initials}</AvatarFallback>
@@ -33,19 +43,25 @@ function Header() {
           </div>
         )}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 justify-center items-center">
         <Link to={`https://github.com/${username}`} target="_blank">
           <AiFillGithub size={30} />
         </Link>
-        <p>
-          <AiFillFacebook size={30} />
-        </p>
-        <p>
-          <RiTwitterXFill size={30} />
-        </p>
-        <p>
-          <AiFillLinkedin size={30} />
-        </p>
+        {facebookLink && (
+          <Link to={facebookLink.url} target="_blank">
+            <AiFillFacebook size={30} />
+          </Link>
+        )}
+        {twitterLink && (
+          <Link to={twitterLink.url} target="_blank">
+            <RiTwitterXFill size={30} />
+          </Link>
+        )}
+        {linkedinLink && (
+          <Link to={linkedinLink.url} target="_blank">
+            <AiFillLinkedin size={30} />
+          </Link>
+        )}
       </div>
     </div>
   );

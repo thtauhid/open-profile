@@ -27,3 +27,6 @@ export const getProjects = () => {
 export const getExperience = () => {
   return info.experience;
 };
+export const getTopRepos = () => {
+  return info.top_repos;
+};
