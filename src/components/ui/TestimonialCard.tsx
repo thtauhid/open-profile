@@ -22,8 +22,8 @@ const TestimonialCard = ({
       <section className="flex w-full h-full p-2 justify-around flex-col pl-8">
         <div className="text-lg font-semibold ">{content}</div>
         <div className="flex flex-col t">
-          <span className="text-lg text-slate-700 font-extrabold ">{name}</span>
-          <span className="text-lg text-slate-600 font-normal ">{title}</span>
+          <span className="text-lg text-gray-500 font-extrabold ">{name}</span>
+          <span className="text-lg text-gray-500 font-normal ">{title}</span>
         </div>
       </section>
     </article>

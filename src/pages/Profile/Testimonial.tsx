@@ -11,29 +11,25 @@ const Testimonial = () => {
         <TestimonialCard
           imgUrl="https://github.com/thtauhid.png"
           name="John Doe"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Aut hic sequi accusamus rem autem! "
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! "
           title="Ceo of IIM"
         />
         <TestimonialCard
           imgUrl="https://github.com/thtauhid.png"
           name="John Doe"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Aut hic sequi accusamus rem autem! "
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem autem! "
           title="Ceo of IIM"
         />
         <TestimonialCard
           imgUrl="https://github.com/thtauhid.png"
           name="John Doe"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Aut hic sequi accusamus rem aute"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem aute"
           title="Ceo of IIM"
         />
         <TestimonialCard
           imgUrl="https://github.com/thtauhid.png"
           name="John Doe"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-       Aut hic sequi accusamus rem at"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic sequi accusamus rem at"
           title="Ceo of IIM"
         />
       </section>
