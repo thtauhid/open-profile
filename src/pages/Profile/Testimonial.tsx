@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const Testimonial = () => {
   return (
-    <div className="border-2 flex justify-between items-center flex-col p-3">
-      <div className="flex w-full justify-start my-2 text-[2rem] font-bold pl-4">
+    <div className="border-2 flex justify-between items-center flex-col">
+      <div className="flex w-full justify-start text-2xl font-bold px-6 my-6">
         Testimonials
       </div>
-      <section className="flex flex-wrap justify-around">
+      <section className="flex flex-wrap justify-between px-6">
         <TestimonialCard
           imgUrl="https://github.com/thtauhid.png"
           name="John Doe"
