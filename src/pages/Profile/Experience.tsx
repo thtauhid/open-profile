@@ -30,7 +30,7 @@ export default function Experience() {
             );
           })}
         </div>
-        <div className="flex justify-end px-10 py-1">
+        <div className="flex justify-end py-1">
           <Button type="submit">More</Button>
         </div>
       </div>
