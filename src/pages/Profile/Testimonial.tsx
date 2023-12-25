@@ -33,7 +33,7 @@ const Testimonial = () => {
           title="Ceo of IIM"
         />
       </section>
-      <div className="my-4 flex w-full justify-end pr-5">
+      <div className="my-4 flex w-full justify-end px-6">
         <Button variant={"default"}>More</Button>
       </div>
     </div>
