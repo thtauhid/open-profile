@@ -44,6 +44,7 @@ function Homepage() {
     }
   };
 
+  //Handle the search functionality and add username to Localstorage if it is a valid name/string
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -63,6 +64,7 @@ function Homepage() {
     navigate(`profile/${username}`);
   };
 
+  // Used to navigate a a user profile which is entered
   const handleButtonClick = (clickedUsername: string) => {
     // Set the clicked username in the input field
     navigate(`profile/${clickedUsername}`);
