@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     element: <Explore />,
   },
   {
-    path: "*", 
+    path: "*",
     element: <NotFound />,
-  }
+  },
 ]);
 export default router;
