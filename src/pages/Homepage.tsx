@@ -44,8 +44,14 @@ function Homepage() {
     }
   };
 
+  //Handle the search functionality and add username to Localstorage if it is a valid name/string
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // To check wheather the name entered is not null
+    if (!username.trim()) {
+      return;
+    }
 
     // Add the new username to the beginning of the array
     const updatedUsernames = [username, ...storedUsernames.slice(0, 3)];
@@ -59,6 +65,7 @@ function Homepage() {
     navigate(`profile/${username}`);
   };
 
+  // Used to navigate a a user profile which is entered
   const handleButtonClick = (clickedUsername: string) => {
     // Set the clicked username in the input field
     navigate(`profile/${clickedUsername}`);
