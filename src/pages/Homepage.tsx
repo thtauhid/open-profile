@@ -47,6 +47,10 @@ function Homepage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (!username.trim()) {
+      return;
+    }
+
     // Add the new username to the beginning of the array
     const updatedUsernames = [username, ...storedUsernames.slice(0, 3)];
 
