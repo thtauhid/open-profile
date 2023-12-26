@@ -119,4 +119,4 @@ Once you've submitted a PR, maintainers and contributors will review your code, 
 
 Contributors will be credited for their contributions in the project's documentation. Thank you for your valuable contributions to Open Profile!
 
-Note: This CONTRIBUTING.md file is a guideline. The project maintainers may have specific requirements or procedures that override these general instructions. Always refer to the project's own CONTRIBUTING.md if it exists.
+Note: This CONTRIBUTING.md file is a guideline. The project maintainers may have specific requirements or procedures that override these general instructions.
