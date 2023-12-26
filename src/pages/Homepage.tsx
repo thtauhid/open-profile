@@ -48,6 +48,7 @@ function Homepage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // To check wheather the name entered is not null
     if (!username.trim()) {
       return;
     }
