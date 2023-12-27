@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { TiDelete } from "react-icons/ti";
 
 // context
 import PageDetailContext, { PageDetail } from "@/context/PageDetailContext";
@@ -71,6 +72,20 @@ function Homepage() {
     navigate(`profile/${clickedUsername}`);
   };
 
+
+  // To delete a username from the list of names searched and stored in localstorage
+  function deleteUser(clickedUsername: string) {
+    // Remove the clicked username from the array
+    const updatedUsernames = storedUsernames.filter((user) => user !== clickedUsername);
+
+    // Update the state with the new array of usernames
+    setStoredUsernames(updatedUsernames);
+
+    // Save the updated usernames to localStorage
+    localStorage.setItem("Usernames", JSON.stringify(updatedUsernames));
+  }
+
+
   const initialUsernames = storedUsernames.slice(0, 4);
 
   return (
@@ -88,18 +103,22 @@ function Homepage() {
             />
             <Button type="submit">Search</Button>
           </form>
-          <div className="flex mt-[-13px] mb-2">
+          <div className="flex mt-[-13px] mb-2 relative">
             {initialUsernames.map((user) => (
-              <button
-                onClick={() => handleButtonClick(user)}
-                className="text-[12px] text-gray-600 border-[1px] border-gray-600 hover:bg-gray-300 p-1 mb-1 mr-2 rounded-sm text-center"
-                type="button"
-                key={user}
-              >
-                {user}
-              </button>
+              <div key={user} className="relative">
+                <button
+                  onClick={() => handleButtonClick(user)}
+                  className=" text-[12px] text-gray-600 border-[1px] border-gray-600 hover:bg-gray-300 p-1 mb-1 mr-2 rounded-sm text-center"
+                  type="button"
+                  key={user}
+                >
+                  {user}
+                </button>
+                <TiDelete onClick={() => deleteUser(user)} className={"bg-white rounded-full inline cursor-pointer text-black absolute top-[-5px] right-0 z-10"} />
+              </div>
             ))}
           </div>
+
           <hr />
           <p className="mt-5 text-center text-gray-600">
             Enter a GitHub handle to get started
