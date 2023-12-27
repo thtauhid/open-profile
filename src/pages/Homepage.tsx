@@ -114,7 +114,7 @@ function Homepage() {
                 >
                   {user}
                 </button>
-                <TiDelete onClick={() => deleteUser(user)} className={"inline cursor-pointer text-black absolute top-[-5px] right-0 z-10"} />
+                <TiDelete onClick={() => deleteUser(user)} className={"bg-white rounded-full inline cursor-pointer text-black absolute top-[-5px] right-0 z-10"} />
               </div>
             ))}
           </div>
